@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+}
+
+.nav {
+  width: 74px;
+  height: 1000px;
+  background-color: aqua;
+}
+
+.wrapper {
+  padding: 10px;
+  background-color: rgb(27, 17, 167);
+}
+
+.header {
+  padding: 10px;
+  background-color: chartreuse;
+}
+
+.main {
+display: flex;
+}
+
+.user {
+  padding: 10px;
+  width: 1298px;
+  height: 71px;
+  background-color: brown;
+}
+
+.static {
+  padding: 10px;
+  width: 1298px;
+  height: 98px;
+  background-color: chocolate;
+}
+
+.content {
+  padding: 10px;
+  // width: 1280px;
+  // height:832px;
+  background-color: bisque;
+}
+
+.charts {
+  display: flex;
+  padding: 10px;
+  //width: 264px;
+  //height: 266px;
+  background-color: rgb(163, 72, 223);
+}
+
+.schedule {
+  padding: 10px;
+  width: 704px;
+  height: 266px;
+  background-color: yellow;
+}
+
+.revenue {
+  padding: 10px;
+  width: 264px;
+  height: 266px;
+  background-color: olive;
+}
+
+.content-bottom-container {
+  display: flex;
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+
+.dynamic-menu__progress-shipments {
+  display: flex;
+}
+
+.feedback {
+  padding: 10px;
+  width: 467px;
+  height: 508px;
+  background-color: orange;
+}
+
+.dynamic-menu {
+  padding: 10px;
+  // width: 501px;
+  // height: 509px;
+  background-color: darkolivegreen;
+}
+
+.task {
+  padding: 10px;
+  width: 501px;
+  height: 245px;
+  background-color: gray;
+}
+
+.progress {
+  padding: 10px;
+  width: 241px;
+  height: 245px;
+  background-color: yellowgreen;
+}
+
+.shipments {
+  padding: 10px;
+  width: 241px;
+  height: 245px;
+  background-color: lightgrey;
+}
+
+.contacts {
+  width: 273px;
+  height: 612px;
+  background-color: crimson;
+}
+
+.footer {
+  background-color: darkgoldenrod;
+  width: 273px;
+  height: 230px;
+}
