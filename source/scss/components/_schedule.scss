@@ -1,0 +1,42 @@
+//Google says that without javascript something like this ...
+.schedule {
+  padding: 10px;
+  width: 704px;
+  height: 266px;
+  background-color: #ffffff;
+  background-image: url(/source/img/main/schedule/schedule.png);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+}
+
+.schedule__ellipse-button {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(to right, #fd4f75, #fc7659);
+  width: 68px;
+  height: 24px;
+  border-radius: 11px;
+}
+
+.schedule__btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule__name-btn {
+    margin: auto;
+}
+
+.schedule__day-button {
+  border: none;
+  background: none;
+}
+
+.schedule__year-button {
+  border: none;
+  background: none;
+}

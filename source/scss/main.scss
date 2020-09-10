@@ -1,3 +1,26 @@
+@import "./components/navigation";
+
+@import "./components/user";
+
+@import "./components/static";
+
+@import "./components/schedule";
+
+@import "./components/revenue";
+
+@import "./components/feedback";
+
+@import "./components/task";
+
+@import "./components/progress";
+
+@import "./components/shipments";
+
+@import "./components/contacts";
+
+@import "./components/footer";
+
+//===================================only general or time selectors!===================================
 *,
 *::before,
 *::after {
@@ -12,7 +35,8 @@ body {
 .nav {
   width: 74px;
   height: 1000px;
-  background-color: aqua;
+  background: linear-gradient(to top, #FD5272, #FC725C);
+  
 }
 
 .wrapper {
@@ -20,27 +44,24 @@ body {
   background-color: rgb(27, 17, 167);
 }
 
-.header {
-  padding: 10px;
-  background-color: chartreuse;
-}
-
 .main {
-display: flex;
+  display: flex;
 }
 
 .user {
-  padding: 10px;
   width: 1298px;
   height: 71px;
-  background-color: brown;
+  background-color: #ffff;
+  
 }
 
 .static {
+  display: flex;
   padding: 10px;
   width: 1298px;
   height: 98px;
-  background-color: chocolate;
+  background-color: #ffff;
+  border: 0.5px solid #e6e4e4;
 }
 
 .content {
@@ -58,19 +79,7 @@ display: flex;
   background-color: rgb(163, 72, 223);
 }
 
-.schedule {
-  padding: 10px;
-  width: 704px;
-  height: 266px;
-  background-color: yellow;
-}
 
-.revenue {
-  padding: 10px;
-  width: 264px;
-  height: 266px;
-  background-color: olive;
-}
 
 .content-bottom-container {
   display: flex;
@@ -96,25 +105,11 @@ display: flex;
   background-color: darkolivegreen;
 }
 
-.task {
-  padding: 10px;
-  width: 501px;
-  height: 245px;
-  background-color: gray;
-}
-
 .progress {
   padding: 10px;
   width: 241px;
   height: 245px;
   background-color: yellowgreen;
-}
-
-.shipments {
-  padding: 10px;
-  width: 241px;
-  height: 245px;
-  background-color: lightgrey;
 }
 
 .contacts {

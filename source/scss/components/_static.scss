@@ -1,0 +1,96 @@
+.static {
+  display: flex;
+  justify-content: space-between;
+}
+.header__static-cards {
+  text-align: left;
+  justify-content: space-around;
+}
+
+.header__cards-title {
+  margin: 0;
+  color: #777777;
+  font-size: 12px;
+}
+
+.header__static-numerical-indicator {
+  margin: 0;
+  justify-content: space-around;
+  font-size: 22px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(120deg, #fd5272, #ea6d54);
+}
+
+.growth-statistics {
+  font-size: 9px;
+  font-weight: 200;
+  color: #777777;
+}
+//---------------------------------------------
+.static__triangle {
+  position: relative;
+  font-size: 7px;
+  margin: 5px;
+}
+
+.static__triangle.triangle-up::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 1px;
+  transform: rotate(59deg);
+  border: 4.04px solid #ffffff;
+}
+
+.static__triangle.triangle-up::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  right: 1px;
+  transform: rotate(31deg);
+  border: 5px solid #ffffff;
+}
+
+.static__triangle.triangle-up {
+  border-left: 4px solid #a889e9;
+  border-right: 4px solid #a889e9;
+}
+
+.static__triangle.triangle-down {
+  border-left: 4px solid #fd5670;
+  border-right: 4px solid #fd5670;
+}
+
+.static__triangle.triangle-down::before {
+  content: "";
+  padding-top:2px;
+  position: absolute;
+  top: 1.7px;
+  left: 1px;
+  transform: rotate(30deg);
+  border: 4.04px solid #ffffff;
+}
+
+.static__triangle.triangle-down::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  top: 0.5px;
+  right: 1px;
+  transform: rotate(59deg);
+  border: 5px solid #ffffff;
+}
+//--------------------------------------------------
+.header__plus-static-button {
+  border: none;
+  background: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(120deg, #fd5272, #ea6d54);
+}
