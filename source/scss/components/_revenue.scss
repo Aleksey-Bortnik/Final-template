@@ -1,18 +1,42 @@
-.revenue {
-  padding: 10px;
-  width: 264px;
-  height: 266px;
-  background-color: #ffffff;
-  background-image: url(/source/img/main/revenue/revenue-circle.png);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-position-x: 50%;
-  text-align: center;
-}
 
-.revenue__amount {
-padding-top: 51px;
-font-size: 18px;
-font-weight: bold;
-color: #8761C6;
+.revenue {
+  width: 265px;
+  background: #fff;
+  text-align: center;
+
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    border: 8px solid #6a5bb4;
+    background: #ededed;
+    margin: 31px 70px;
+  }
+
+  &__background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  &__currency {
+    font-size: 25px;
+    font-weight: 700;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #b26ae1, #6a5bb4);
+  }
+
+  &__course {
+    display: flex;
+    justify-content: center;
+  }
 }

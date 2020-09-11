@@ -10,7 +10,7 @@
 }
 
 .feedback__img {
-  margin: 0 15px 0 10px;
+  margin: 0 20px 0 10px;
   width: 43px;
   height: 43px;
 }
@@ -23,6 +23,7 @@
 .feedback__background {
   background-color: rgb(204, 204, 204);
   border: 0.5px solid gray;
+  padding: 20px;
 }
 
 .feedback__block {
@@ -32,7 +33,25 @@
 
 .feedback__user-block {
   display: flex;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
+.feedback__user-comment-container {
+  margin-bottom: 20px;
+}
+
+.feedback__user-feedback {
+  margin-bottom: 20px;
+}
+
+.feedback__user-feedback-container {
+  border-left: 3px solid gray;
+  padding-left: 17px;
+
+  .feedback__user-feedback:last-child {
+    margin-bottom: 0;
+  }
+}
 
 
