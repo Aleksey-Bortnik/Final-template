@@ -1,0 +1,52 @@
+.contacts {
+  width: 273px;
+  height: 516px;
+  background-color: crimson;
+  overflow-y: scroll;
+  position: relative;
+  padding: 4px 9px 14px 25px;
+  background: #c7d0d4;
+}
+
+.contacts::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+.contacts::-webkit-scrollbar-track-piece {
+  background: #f1f1f1;
+}
+.contacts::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background: #f1f1f1;
+}
+.contacts::-webkit-scrollbar-thumb:vertical:hover {
+  background: #fc6c61;
+}
+
+.contacts__data {
+  padding: 10px 5px;
+}
+
+.contacts__person {
+  display: flex;
+  padding: 13px 0;
+  border-bottom: 1px solid rgb(155, 153, 153);
+}
+.contact__data-profession {
+  font-size: 9px;
+  color: #999999;
+}
+
+.contact__data-name {
+  font-size: 13px;
+}
+
+.contacts__chat-icon-container {
+text-align: right;
+  flex-grow: 1;
+}
+
+.contacts__chat-icon-line {
+  font-size: 43px;
+  line-height: 38px;
+}

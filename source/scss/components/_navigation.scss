@@ -1,4 +1,7 @@
-.nav {
+.nav-container {
+  width: 74px;
+  height: 1000px;
+  background: linear-gradient(to top, #FD5272, #FC725C);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -9,6 +12,10 @@
     height: 71px;
     border-radius: 1.5px;;
     background-color: #ffffff;
+}
+
+.nav {
+ padding-top: 20px; 
 }
 
 .nav__logo-symbol {
@@ -23,3 +30,4 @@ text-decoration: none;
 color: #ffffff;
 font-size: 10px;
 }
+

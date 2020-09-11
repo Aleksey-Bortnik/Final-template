@@ -31,13 +31,70 @@ body {
   display: flex;
   margin: 0;
 }
-
-.nav {
-  width: 74px;
-  height: 1000px;
-  background: linear-gradient(to top, #FD5272, #FC725C);
-  
+p {
+  margin: 0;
 }
+//---------------------------------------------
+.growth-statistics {
+  font-size: 9px;
+  font-weight: 200;
+  color: #777777;
+}
+
+.triangle {
+  position: relative;
+  font-size: 7px;
+  margin: 5px;
+}
+
+.triangle.triangle-up::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 1px;
+  transform: rotate(59deg);
+  border: 4.04px solid #ffffff;
+}
+
+.triangle.triangle-up::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  right: 1px;
+  transform: rotate(31deg);
+  border: 5px solid #ffffff;
+}
+
+.triangle.triangle-up {
+  border-left: 4px solid #a889e9;
+  border-right: 4px solid #a889e9;
+}
+
+.triangle.triangle-down {
+  border-left: 4px solid #fd5670;
+  border-right: 4px solid #fd5670;
+}
+
+.triangle.triangle-down::before {
+  content: "";
+  padding-top:2px;
+  position: absolute;
+  top: 1.7px;
+  left: 1px;
+  transform: rotate(30deg);
+  border: 4.04px solid #ffffff;
+}
+
+.triangle.triangle-down::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  top: 0.5px;
+  right: 1px;
+  transform: rotate(59deg);
+  border: 5px solid #ffffff;
+}
+//---------------------------------------------
 
 .wrapper {
   padding: 10px;
@@ -91,31 +148,11 @@ body {
   display: flex;
 }
 
-.feedback {
-  padding: 10px;
-  width: 467px;
-  height: 508px;
-  background-color: orange;
-}
-
 .dynamic-menu {
   padding: 10px;
   // width: 501px;
   // height: 509px;
   background-color: darkolivegreen;
-}
-
-.progress {
-  padding: 10px;
-  width: 241px;
-  height: 245px;
-  background-color: yellowgreen;
-}
-
-.contacts {
-  width: 273px;
-  height: 612px;
-  background-color: crimson;
 }
 
 .footer {

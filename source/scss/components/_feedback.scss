@@ -1,0 +1,38 @@
+.feedback {
+  padding: 10px;
+  width: 467px;
+  height: 508px;
+  background-color: rgb(219, 215, 206);
+}
+
+.feedback__block {
+  display: flex;
+}
+
+.feedback__img {
+  margin: 0 15px 0 10px;
+  width: 43px;
+  height: 43px;
+}
+
+.feedback__customer-label {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.feedback__background {
+  background-color: rgb(204, 204, 204);
+  border: 0.5px solid gray;
+}
+
+.feedback__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__user-block {
+  display: flex;
+}
+
+
+

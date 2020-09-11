@@ -10,11 +10,11 @@
 
 <body>
     <!-- =============================================== navigation =============================================== -->
-    <div class="nav">
+    <div class="nav-container">
         <div class="nav__logo">
             <p class="nav__logo-symbol">W</p>
         </div>
-        <nav>
+        <nav class="nav">
             <a class="nav__link" href="" target="blank">
                 <img src="./source/img/navigation/nav-btn-icons/home.png" alt="home icon">
                 <p class="nav__description">Home</p>
@@ -99,9 +99,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         150,0000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -112,9 +112,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         120,0000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -125,9 +125,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         900,000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -138,9 +138,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         850,000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -151,9 +151,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         750,000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -164,9 +164,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         &#36;985,000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -177,9 +177,9 @@
                     </div>
                     <p class="header__static-numerical-indicator">
                         600,000<br>
-                        <span class="static__triangle triangle-up"></span>
+                        <span class="triangle triangle-up"></span>
                         <span class="growth-statistics">1020</span>
-                        <span  class="static__triangle triangle-down"></span>
+                        <span class="triangle triangle-down"></span>
                         <span class="growth-statistics">1020</span>
                     </p>
                 </div>
@@ -194,10 +194,12 @@
             <div class="content">
 
                 <div class="charts">
-                    <!-- =============================================== schedule =============================================== -->
+                    <!-- =============================================== schedule ================================ -->
                     <div class="schedule">
                         <div class="schedule__btn">
                             <aside>Monthly Revenue Progress</aside>
+                            <!-- <span style="font-size: 11px">TODO: implement gradient colors with variables  !</span> -->
+
                             <button class="schedule__ellipse-button">
                                 <p class="schedule__name-btn">Month</p>
                             </button>
@@ -211,31 +213,218 @@
 
 
                     </div>
-                    <!-- =============================================== revenue =============================================== -->
+                    <!-- =============================================== revenue ==================================== -->
                     <div class="revenue">
                         <h3>Revenue Per Hour</h3>
                         <p class="revenue__amount">&#36;150</p>
-
-
-
                     </div>
                 </div>
                 <div class="content-bottom-container">
-                    <div class="feedback">feedback</div>
+                    <!-- =============================================== feedback ==================================== -->
+                    <div class="feedback">
+
+                        <h3 class="feedback__title">Customers Feed</h3>
+                        <div class="feedback__block">
+
+                            <div class="feedback__user-block">
+                                <div class="feedback__user-img-container">
+                                    <img class="feedback__img" src="./source/img/main/feedback/Customer-Sophie.png"
+                                        alt="customer photo">
+                                </div>
+                                <div class="feedback__user-text-container">
+                                    <div class="feedback__user-comment-container  feedback__background">
+                                        <p class="feedback__user-comment"><span class="feedback__customer-label">Sophie
+                                                Turner</span>&nbsp;is simply dummy text of
+                                            the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text
+                                            ever
+                                            since the 1500s, when an</p>
+                                    </div>
+
+                                    <div class="feedback__user-feedback-container">
+
+                                        <div class="feedback__user-feedback feedback__background">
+                                            <p class="feedback__description"><span
+                                                    class="feedback__customer-label">Sophie
+                                                    Turner</span>&nbsp;is simply dummy text of
+                                                the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text
+                                                ever
+                                                since the 1500s, when an</p>
+                                        </div>
+
+                                        <div class="feedback__user-feedback feedback__background">
+                                            <p class="feedback__description"><span
+                                                    class="feedback__customer-label">Sophie
+                                                    Turner</span>&nbsp;is simply dummy text of
+                                                the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text
+                                                ever
+                                                since the 1500s, when an</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback__user-block">
+                                <div class="feedback__user-img-container">
+                                    <img class="feedback__img" src="./source/img/main/feedback/customer-Peter.png"
+                                        alt="customer photo">
+                                </div>
+                                <div class="feedback__user-text-container">
+                                    <div class="feedback__user-comment-container feedback__background">
+                                        <p class="feedback__user-comment"><span class="feedback__customer-label">Peter
+                                                Quill</span>&nbsp;is simply dummy text of
+                                            the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text
+                                            ever
+                                            since the 1500s, when an</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="dynamic-menu">
-                        <!-- =============================================== task =============================================== -->
+                        <!-- =============================================== task ===================================== -->
                         <div class="task">
+                            <h3>Today Task</h3>
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Arrange</span>&nbsp;
+                                    simply dummy text of the printing and......
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Shipments</span>&nbsp;
+                                    simply dummy text of the printing and......&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:31 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Make List</span>&nbsp;
+                                    simply dummy text of the printing and......&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Review</span>&nbsp;
+                                    simply dummy text of the printing and......&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Check Oil level</span>&nbsp;
+                                    and take the car to the service......&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Finish the layout</span>&nbsp;
+                                    and have time to pass it on time.....&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
+                            <div class="task__container">
+                                <div class="custom-checkbox-container">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <p class="task__text">
+                                    <span class="task__description">Sell a Motorcycle</span>&nbsp;
+                                    and open the champagne.........&nbsp;&nbsp;&nbsp;
+                                </p>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                            </div>
+
 
 
                         </div>
                         <div class="dynamic-menu__progress-shipments">
-                            <div class="progress">progress</div>
-                            <!-- =============================================== shipments =============================================== -->
+                            <!-- =============================================== progress ========================================= -->
+                            <div class="progress">
+                                <h3>Progress</h3>
+                                <div class="progress__img"></div>
+                                <div class="progress__growth-statistics">
+                                    <div class="progress__amount">&#36;150,0000</div>
+                                    <div class="progress__static-numerical-indicator">
+                                        <span class="triangle triangle-up"></span>
+                                        <span class="growth-statistics">1020</span>
+                                        <span class="triangle triangle-down"></span>
+                                        <span class="growth-statistics">1020</span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- =============================================== shipments ========================================= -->
                             <div class="shipments">
                                 <h3>Shipments</h3>
                                 <div class="shipments__img"></div>
-                                <div class="shipments__amount">&#36;15,000</div>
-                                <div class="shipments__growth-statistics"></div>
+                                <div class="shipments__growth-statistics">
+                                    <div class="shipments__amount">&#36;15,000</div>
+                                    <div class="shipments__static-numerical-indicator">
+                                        <span class="triangle triangle-up"></span>
+                                        <span class="growth-statistics">1020</span>
+                                        <span class="triangle triangle-down"></span>
+                                        <span class="growth-statistics">1020</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -243,7 +432,164 @@
             </div>
             <!-- =============================================== social =============================================== -->
             <div class="social">
-                <div class="contacts">contacts</div>
+                <!-- =============================================== contacts =============================================== -->
+                <div class="contacts">
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/lawrence.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Jennifer Lawrence</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/Pitt.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Bratt Pitt</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/dicaprio.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Leonardo Dicaprio</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/eisenberg.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Jesse Elsenberg</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/steward.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Kristen Stewart</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/affleck.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Ben Affleck</p>
+                            <p class="contact__data-profession">Cheif Authority</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/avraam-lincoln.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Avraam Lincoln</p>
+                            <p class="contact__data-profession">Bearer of Diplomacy</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/lana rhoades.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Lana Rhoades</p>
+                            <p class="contact__data-profession">Politician</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/valentino-rossi.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Valentino Rossi</p>
+                            <p class="contact__data-profession">Legend of Moto GP</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/oleg-kolosov.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Oleg Kolosov</p>
+                            <p class="contact__data-profession">CSS Archmage</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+                    <div class="contacts__person">
+                        <div>
+                            <img src="./source/img/main/contacts/octocat.png" alt="contact photo">
+                        </div>
+                        <div class="contacts__data">
+                            <p class="contact__data-name">Octocat</p>
+                            <p class="contact__data-profession">Cute god of Github</p>
+                        </div>
+                        <div class="contacts__chat-icon-container">
+                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                    src="./source/img/main/contacts/chat-icon.png"></p>
+                        </div>
+                    </div>
+
+
+                </div>
                 <footer class="footer">footer</footer>
             </div>
 

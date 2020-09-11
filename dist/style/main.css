@@ -1,4 +1,8 @@
-.nav {
+.nav-container {
+  width: 74px;
+  height: 1000px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FD5272), to(#FC725C));
+  background: linear-gradient(to top, #FD5272, #FC725C);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +18,10 @@
   height: 71px;
   border-radius: 1.5px;
   background-color: #ffffff;
+}
+
+.nav {
+  padding-top: 20px;
 }
 
 .nav__logo-symbol {
@@ -203,70 +211,6 @@
   background-image: linear-gradient(120deg, #fd5272, #ea6d54);
 }
 
-.growth-statistics {
-  font-size: 9px;
-  font-weight: 200;
-  color: #777777;
-}
-
-.static__triangle {
-  position: relative;
-  font-size: 7px;
-  margin: 5px;
-}
-
-.static__triangle.triangle-up::before {
-  content: "";
-  position: absolute;
-  bottom: 1.5px;
-  left: 1px;
-  -webkit-transform: rotate(59deg);
-          transform: rotate(59deg);
-  border: 4.04px solid #ffffff;
-}
-
-.static__triangle.triangle-up::after {
-  content: "";
-  position: absolute;
-  bottom: 1.5px;
-  right: 1px;
-  -webkit-transform: rotate(31deg);
-          transform: rotate(31deg);
-  border: 5px solid #ffffff;
-}
-
-.static__triangle.triangle-up {
-  border-left: 4px solid #a889e9;
-  border-right: 4px solid #a889e9;
-}
-
-.static__triangle.triangle-down {
-  border-left: 4px solid #fd5670;
-  border-right: 4px solid #fd5670;
-}
-
-.static__triangle.triangle-down::before {
-  content: "";
-  padding-top: 2px;
-  position: absolute;
-  top: 1.7px;
-  left: 1px;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  border: 4.04px solid #ffffff;
-}
-
-.static__triangle.triangle-down::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  top: 0.5px;
-  right: 1px;
-  -webkit-transform: rotate(59deg);
-          transform: rotate(59deg);
-  border: 5px solid #ffffff;
-}
-
 .header__plus-static-button {
   border: none;
   background: none;
@@ -348,7 +292,36 @@
   color: #8761C6;
 }
 
-.task {
+.feedback {
+  padding: 10px;
+  width: 467px;
+  height: 508px;
+  background-color: #dbd7ce;
+}
+
+.feedback__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__img {
+  margin: 0 15px 0 10px;
+  width: 43px;
+  height: 43px;
+}
+
+.feedback__customer-label {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.feedback__background {
+  background-color: #cccccc;
+  border: 0.5px solid gray;
+}
+
+.feedback__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,17 +329,145 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.feedback__user-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.task {
+  text-align: left;
   padding: 10px;
-  width: 501px;
   height: 245px;
+  max-height: 245px;
   background-color: gray;
+  overflow-y: scroll;
   position: relative;
-  padding: 30px 9px 14px 75px;
-  background: #042b3e;
-  border-top: 50px solid #03a9f4;
+  padding: 11px 9px 14px 11px;
+  background: #c7d0d4;
+}
+
+.task::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+.task::-webkit-scrollbar-track-piece {
+  background: #f1f1f1;
+}
+
+.task::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background: #f1f1f1;
+}
+
+.task::-webkit-scrollbar-thumb:vertical:hover {
+  background: #fc6c61;
+}
+
+.custom-checkbox-container {
+  width: 18px;
+  margin-right: 7px;
+}
+
+.custom-checkbox {
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  height: 17px;
+  width: 17px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #FC6664;
+  border: initial !important;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.task__description {
+  color: #fc6962;
+  font-size: 14px;
+}
+
+.task__container {
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid beige;
+}
+
+.task__container:last-child {
+  border-bottom: 1px solid beige;
+}
+
+.task__text {
+  font-size: 13px;
+  line-height: 19.34px;
+}
+
+.task__time {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+}
+
+.progress {
+  text-align: center;
+  padding: 10px;
+  width: 241px;
+  height: 245px;
+  background-color: #ffffff;
+}
+
+.progress__img {
+  width: 187px;
+  height: 115px;
+  background-image: url("/source/img/main/progress/progress-diagram.png");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position-y: 50%;
+  background-position-x: 20px;
 }
 
 .shipments {
+  text-align: center;
   padding: 10px;
   width: 241px;
   height: 245px;
@@ -383,6 +484,80 @@
   background-position-x: 50%;
 }
 
+.shipments__growth-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts {
+  width: 273px;
+  height: 516px;
+  background-color: crimson;
+  overflow-y: scroll;
+  position: relative;
+  padding: 4px 9px 14px 25px;
+  background: #c7d0d4;
+}
+
+.contacts::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+
+.contacts::-webkit-scrollbar-track-piece {
+  background: #f1f1f1;
+}
+
+.contacts::-webkit-scrollbar-thumb:vertical {
+  height: 10px;
+  background: #f1f1f1;
+}
+
+.contacts::-webkit-scrollbar-thumb:vertical:hover {
+  background: #fc6c61;
+}
+
+.contacts__data {
+  padding: 10px 5px;
+}
+
+.contacts__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 13px 0;
+  border-bottom: 1px solid #9b9999;
+}
+
+.contact__data-profession {
+  font-size: 9px;
+  color: #999999;
+}
+
+.contact__data-name {
+  font-size: 13px;
+}
+
+.contacts__chat-icon-container {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.contacts__chat-icon-line {
+  font-size: 43px;
+  line-height: 38px;
+}
+
 *,
 *::before,
 *::after {
@@ -397,11 +572,72 @@ body {
   margin: 0;
 }
 
-.nav {
-  width: 74px;
-  height: 1000px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FD5272), to(#FC725C));
-  background: linear-gradient(to top, #FD5272, #FC725C);
+p {
+  margin: 0;
+}
+
+.growth-statistics {
+  font-size: 9px;
+  font-weight: 200;
+  color: #777777;
+}
+
+.triangle {
+  position: relative;
+  font-size: 7px;
+  margin: 5px;
+}
+
+.triangle.triangle-up::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 1px;
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
+  border: 4.04px solid #ffffff;
+}
+
+.triangle.triangle-up::after {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  right: 1px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
+  border: 5px solid #ffffff;
+}
+
+.triangle.triangle-up {
+  border-left: 4px solid #a889e9;
+  border-right: 4px solid #a889e9;
+}
+
+.triangle.triangle-down {
+  border-left: 4px solid #fd5670;
+  border-right: 4px solid #fd5670;
+}
+
+.triangle.triangle-down::before {
+  content: "";
+  padding-top: 2px;
+  position: absolute;
+  top: 1.7px;
+  left: 1px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  border: 4.04px solid #ffffff;
+}
+
+.triangle.triangle-down::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  top: 0.5px;
+  right: 1px;
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
+  border: 5px solid #ffffff;
 }
 
 .wrapper {
@@ -459,29 +695,9 @@ body {
   display: flex;
 }
 
-.feedback {
-  padding: 10px;
-  width: 467px;
-  height: 508px;
-  background-color: orange;
-}
-
 .dynamic-menu {
   padding: 10px;
   background-color: darkolivegreen;
-}
-
-.progress {
-  padding: 10px;
-  width: 241px;
-  height: 245px;
-  background-color: yellowgreen;
-}
-
-.contacts {
-  width: 273px;
-  height: 612px;
-  background-color: crimson;
 }
 
 .footer {
