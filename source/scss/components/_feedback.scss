@@ -2,7 +2,7 @@
   padding: 10px;
   width: 467px;
   height: 508px;
-  background-color: rgb(219, 215, 206);
+  background-color: rgb(255, 255, 255);
 }
 
 .feedback__block {
@@ -21,8 +21,8 @@
 }
 
 .feedback__background {
-  background-color: rgb(204, 204, 204);
-  border: 0.5px solid gray;
+  background-color:#F1F1F1;
+  border: 0.5px solid #dbdbdb;
   padding: 20px;
 }
 
@@ -46,12 +46,18 @@
 }
 
 .feedback__user-feedback-container {
-  border-left: 3px solid gray;
+  border-left: 3px solid #F1F1F1;
   padding-left: 17px;
 
   .feedback__user-feedback:last-child {
     margin-bottom: 0;
   }
+}
+
+.feedback__title{
+font-size: 14px;
+font-weight: 700;
+color: #777777;
 }
 
 

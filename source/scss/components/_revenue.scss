@@ -1,6 +1,7 @@
 
 .revenue {
   width: 265px;
+  margin-left: 20px;
   background: #fff;
   text-align: center;
 
@@ -40,3 +41,9 @@
     justify-content: center;
   }
 }
+
+.revenue__title{
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+  }

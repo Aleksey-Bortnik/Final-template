@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
     <title>Dashboard</title>
 </head>
 
@@ -197,9 +199,7 @@
                     <!-- =============================================== schedule ================================ -->
                     <div class="schedule">
                         <div class="schedule__btn">
-                            <aside>Monthly Revenue Progress</aside>
-                            <!-- <span style="font-size: 11px">TODO: implement gradient colors with variables  !</span> -->
-
+                            <aside class="schedule__title">Monthly Revenue Progress</aside>
                             <button class="schedule__ellipse-button">
                                 <p class="schedule__name-btn">Month</p>
                             </button>
@@ -215,7 +215,7 @@
                     </div>
                     <!-- =============================================== revenue ==================================== -->
                     <section class="revenue">
-                        <h2 class="main__title">Revenue Per Hour</h2>
+                        <h2 class="revenue__title">Revenue Per Hour</h2>
 
                         <div class="revenue__circle">
                             <div class="revenue__background">
@@ -288,8 +288,8 @@
                                 </div>
                                 <div class="feedback__user-text-container">
                                     <div class="feedback__user-comment-container feedback__background">
-                                        <p class="feedback__user-comment"><span class="feedback__customer-label">Peter
-                                                Quill</span>&nbsp;is simply dummy text of
+                                        <p class="feedback__user-comment"><span class="feedback__customer-label">Johnny
+                                                Sins</span>&nbsp;is simply dummy text of
                                             the printing and
                                             typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                             text
@@ -304,7 +304,7 @@
                     <div class="dynamic-menu">
                         <!-- =============================================== task ===================================== -->
                         <div class="task">
-                            <h3>Today Task</h3>
+                            <h3 class="task__title">Today Task</h3>
                             <div class="task__container">
                                 <div class="custom-checkbox-container">
                                     <label class="custom-checkbox">
@@ -344,7 +344,7 @@
                                     <span class="task__description">Make List</span>&nbsp;
                                     simply dummy text of the printing and......&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:41 AM</div>
                             </div>
 
                             <div class="task__container">
@@ -358,7 +358,7 @@
                                     <span class="task__description">Review</span>&nbsp;
                                     simply dummy text of the printing and......&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:59 AM</div>
                             </div>
 
                             <div class="task__container">
@@ -372,7 +372,7 @@
                                     <span class="task__description">Check Oil level</span>&nbsp;
                                     and take the car to the service......&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;1:01 AM</div>
                             </div>
 
                             <div class="task__container">
@@ -386,7 +386,7 @@
                                     <span class="task__description">Finish the layout</span>&nbsp;
                                     and have time to pass it on time.....&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;1:35 AM</div>
                             </div>
 
                             <div class="task__container">
@@ -400,7 +400,7 @@
                                     <span class="task__description">Sell a Motorcycle</span>&nbsp;
                                     and open the champagne.........&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;12:24 AM</div>
+                                <div class="task__time"><img src="./source/img/main/task/clock.png">&nbsp;4:04 PM</div>
                             </div>
 
 
@@ -409,7 +409,7 @@
                         <div class="dynamic-menu__progress-shipments">
                             <!-- =============================================== progress ========================================= -->
                             <div class="progress">
-                                <h3>Progress</h3>
+                                <h3 class="progress__title">Progress</h3>
                                 <div class="progress__img"></div>
                                 <div class="progress__growth-statistics">
                                     <div class="progress__amount">&#36;150,0000</div>
@@ -426,7 +426,7 @@
                             </div>
                             <!-- =============================================== shipments ========================================= -->
                             <div class="shipments">
-                                <h3>Shipments</h3>
+                                <h3 class="shipments__title">Shipments</h3>
                                 <div class="shipments__img"></div>
                                 <div class="shipments__growth-statistics">
                                     <div class="shipments__amount">&#36;15,000</div>
@@ -446,177 +446,199 @@
             <div class="social">
                 <!-- =============================================== contacts =============================================== -->
                 <div class="contacts">
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/lawrence.png" alt="contact photo">
+                    <div class="contacts__button">
+                        <a class="contacts__link button__users" href=""><img class="contacts__users"
+                                src="source/img/main/contacts/users.png" alt="users"></a>
+                        <a class="contacts__link button__chat" href=""><img class="contacts__chat"
+                                src="source/img/main/contacts/chat.png" alt="chat"></a>
+                        <a class="contacts__link button__like" href=""><img class="contacts__like"
+                                src="source/img/main/contacts/like.png" alt="like"></a>
+                    </div>
+
+                    <div class="contacts__persons-scroll">
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/lawrence.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Jennifer Lawrence</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                            </div>
                         </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Jennifer Lawrence</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/Pitt.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Bratt Pitt</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                            </div>
                         </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/dicaprio.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Leonardo Dicaprio</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/eisenberg.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Jesse Elsenberg</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/steward.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Kristen Stewart</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/affleck.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Ben Affleck</p>
+                                <p class="contact__data-profession">Cheif Authority</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/avraam-lincoln.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Avraam Lincoln</p>
+                                <p class="contact__data-profession">Bearer of Diplomacy</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/lana rhoades.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Lana Rhoades</p>
+                                <p class="contact__data-profession">Politician</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/valentino-rossi.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Valentino Rossi</p>
+                                <p class="contact__data-profession">Legend of Moto GP</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/oleg-kolosov.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Oleg Kolosov</p>
+                                <p class="contact__data-profession">CSS Archmage</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__person">
+                            <div>
+                                <img src="./source/img/main/contacts/octocat.png" alt="contact photo">
+                            </div>
+                            <div class="contacts__data">
+                                <p class="contact__data-name">Octocat</p>
+                                <p class="contact__data-profession">Cute God of Github</p>
+                            </div>
+                            <div class="contacts__chat-icon-container">
+                                <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
+                                        src="./source/img/main/contacts/chat-icon.png"></p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/Pitt.png" alt="contact photo">
+                    <div class="contact__search">
+                        <div class="contact__search-input-container">
+                            <input placeholder="Search Peoples, Chats and Reviews">
                         </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Bratt Pitt</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
+                        <div class="contact__button-container">
+                            <img src="source/img/main/contacts/zoom.png">
                         </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
+                        <div class="contact__button-container">
+                            <img src="source/img/main/contacts/edit.png">
                         </div>
                     </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/dicaprio.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Leonardo Dicaprio</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/eisenberg.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Jesse Elsenberg</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png" alt="chat icon"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/steward.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Kristen Stewart</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/affleck.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Ben Affleck</p>
-                            <p class="contact__data-profession">Cheif Authority</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/avraam-lincoln.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Avraam Lincoln</p>
-                            <p class="contact__data-profession">Bearer of Diplomacy</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/lana rhoades.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Lana Rhoades</p>
-                            <p class="contact__data-profession">Politician</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/valentino-rossi.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Valentino Rossi</p>
-                            <p class="contact__data-profession">Legend of Moto GP</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/oleg-kolosov.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Oleg Kolosov</p>
-                            <p class="contact__data-profession">CSS Archmage</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
-                    <div class="contacts__person">
-                        <div>
-                            <img src="./source/img/main/contacts/octocat.png" alt="contact photo">
-                        </div>
-                        <div class="contacts__data">
-                            <p class="contact__data-name">Octocat</p>
-                            <p class="contact__data-profession">Cute god of Github</p>
-                        </div>
-                        <div class="contacts__chat-icon-container">
-                            <p class="contacts__chat-icon-line"><img class="contacts__chat-icon"
-                                    src="./source/img/main/contacts/chat-icon.png"></p>
-                        </div>
-                    </div>
-
 
                 </div>
                 <footer class="footer">
-                    <h2 class="title">Featured Companys</h2>
+                    <h2 class="footer__title">Featured Companys</h2>
                     <div class="footer__links-container">
-                            <a class="footer__logo footer__rdio" href="#"><img src="source/img/footer/rdio.png"
-                                    alt="rdio"></a>
-                            <a class="footer__logo footer__css" href="#"><img src="source/img/footer/css3.png"
-                                    alt="css3"></a>
-                            <a class="footer__logo footer__deviantart" href="#"><img
-                                    src="source/img/footer/deviantart.png" alt="deviantart"></a>
-                            <a class="footer__logo footer__xing" href="#"><img src="source/img/footer/xing.png"
-                                    alt="xing"></a>
-                            <a class="footer__logo footer__vimeo" href="#"><img src="source/img/footer/vimeo.png"
-                                    alt="vimeo"></a>
-                            <a class="footer__logo footer__vk" href="#"><img src="source/img/footer/vk.png"
-                                    alt="vk"></a>
+                        <a class="footer__logo footer__rdio" href="#"><img src="source/img/footer/rdio.png"
+                                alt="rdio"></a>
+                        <a class="footer__logo footer__css" href="#"><img src="source/img/footer/css3.png"
+                                alt="css3"></a>
+                        <a class="footer__logo footer__deviantart" href="#"><img src="source/img/footer/deviantart.png"
+                                alt="deviantart"></a>
+                        <a class="footer__logo footer__xing" href="#"><img src="source/img/footer/xing.png"
+                                alt="xing"></a>
+                        <a class="footer__logo footer__vimeo" href="#"><img src="source/img/footer/vimeo.png"
+                                alt="vimeo"></a>
+                        <a class="footer__logo footer__vk" href="#"><img src="source/img/footer/vk.png" alt="vk"></a>
 
                     </div>
                 </footer>

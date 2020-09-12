@@ -1,33 +1,33 @@
 .nav-container {
   width: 74px;
   height: 1000px;
-  background: linear-gradient(to top, #FD5272, #FC725C);
+  background: linear-gradient(to top, #fd5272, #fc725c);
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .nav__logo {
-    width: 74px;
-    height: 71px;
-    border-radius: 1.5px;;
-    background-color: #ffffff;
+  width: 74px;
+  height: 71px;
+  border-radius: 1.5px;
+  background-color: #ffffff;
+  font-family: Courgette;
 }
 
 .nav {
- padding-top: 20px; 
+  padding-top: 20px;
 }
 
 .nav__logo-symbol {
-    margin: 0;
-    text-align: center;
-    font-size: 51px;
-    font-weight: bolder;
+  margin: 0;
+  text-align: center;
+  font-size: 51px;
+  font-weight: bolder;
 }
 
 .nav__link {
-text-decoration: none;
-color: #ffffff;
-font-size: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 10px;
 }
-
