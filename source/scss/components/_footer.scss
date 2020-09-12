@@ -1,58 +1,59 @@
 .footer {
-    width: 273px;
-    padding: 29px 40px 33px 40px;
-    background: #fff;
-    text-align: center;
+  height: 262px;
+  width: 273px;
+  padding: 29px 40px 33px 40px;
+  background: #fff;
+  text-align: center;
 
-    &__links-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 29px;
-    }
-
-    &__links-row {
-        display: flex;
-        flex-direction: row;
-      }
-  
-    &__logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 55px;
-      height: 55px;
-      border-radius: 20px;
-      margin: 4px;
-    }
-
-    &__rdio {
-      background: linear-gradient(0deg, #6A5BB4,#C28BE5);
-    }
-  
-    &__css {
-      background: linear-gradient(0deg, #4DBDC4, #6FEACC);
-    }
-  
-    &__deviantart {
-      background: linear-gradient(0deg, #B3717A, #F7CCAE);
-    }
-  
-    &__xing {
-      background: linear-gradient(0deg, #8B4EB5, #7E92E5);
-    }
-  
-    &__vimeo {
-      background: linear-gradient(0deg, #578DE7, #40CFE0);
-    }
-  
-    &__vk {
-      background: linear-gradient(0deg, #F59083, #FBD78C);
-    }
+  &__links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 29px;
   }
-  .footer__title{
-    font-size: 14px;
-    font-weight: 700;
-    color: #777777;
-    }
+
+  &__links-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    margin: 4px;
+  }
+
+  &__rdio {
+    background: linear-gradient(0deg, #6a5bb4, #c28be5);
+  }
+
+  &__css {
+    background: linear-gradient(0deg, #4dbdc4, #6feacc);
+  }
+
+  &__deviantart {
+    background: linear-gradient(0deg, #b3717a, #f7ccae);
+  }
+
+  &__xing {
+    background: linear-gradient(0deg, #8b4eb5, #7e92e5);
+  }
+
+  &__vimeo {
+    background: linear-gradient(0deg, #578de7, #40cfe0);
+  }
+
+  &__vk {
+    background: linear-gradient(0deg, #f59083, #fbd78c);
+  }
+}
+.footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+}

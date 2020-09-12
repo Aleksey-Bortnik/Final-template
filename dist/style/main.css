@@ -1,6 +1,6 @@
 .nav-container {
   width: 74px;
-  height: 1000px;
+  height: 1004px;
   background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fc725c));
   background: linear-gradient(to top, #fd5272, #fc725c);
   display: -webkit-box;
@@ -22,7 +22,19 @@
 }
 
 .nav {
-  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .nav__logo-symbol {
@@ -32,10 +44,25 @@
   font-weight: bolder;
 }
 
+.nav__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .nav__link {
   text-decoration: none;
   color: #ffffff;
   font-size: 10px;
+  padding-top: 20px;
+}
+
+.nav__link:last-child {
+  padding-bottom: 20px;
 }
 
 .user {
@@ -427,7 +454,7 @@
           flex: 1 1;
   margin-bottom: 20px;
   height: 245px;
-  width: 502px;
+  width: 508px;
   max-height: 245px;
   background-color: #f7f7f7;
   overflow-y: scroll;
@@ -544,11 +571,9 @@
 
 .progress {
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
   padding: 10px;
   height: 245px;
+  width: 242px;
   background-color: #ffffff;
 }
 
@@ -578,9 +603,6 @@
   text-align: center;
   margin-left: 20px;
   padding: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
   width: 241px;
   height: 245px;
   background-color: #ffffff;
@@ -810,6 +832,7 @@
 }
 
 .footer {
+  height: 262px;
   width: 273px;
   padding: 29px 40px 33px 40px;
   background: #fff;
@@ -859,33 +882,33 @@
 }
 
 .footer__rdio {
-  background: -webkit-gradient(linear, left bottom, left top, from(#6A5BB4), to(#C28BE5));
-  background: linear-gradient(0deg, #6A5BB4, #C28BE5);
+  background: -webkit-gradient(linear, left bottom, left top, from(#6a5bb4), to(#c28be5));
+  background: linear-gradient(0deg, #6a5bb4, #c28be5);
 }
 
 .footer__css {
-  background: -webkit-gradient(linear, left bottom, left top, from(#4DBDC4), to(#6FEACC));
-  background: linear-gradient(0deg, #4DBDC4, #6FEACC);
+  background: -webkit-gradient(linear, left bottom, left top, from(#4dbdc4), to(#6feacc));
+  background: linear-gradient(0deg, #4dbdc4, #6feacc);
 }
 
 .footer__deviantart {
-  background: -webkit-gradient(linear, left bottom, left top, from(#B3717A), to(#F7CCAE));
-  background: linear-gradient(0deg, #B3717A, #F7CCAE);
+  background: -webkit-gradient(linear, left bottom, left top, from(#b3717a), to(#f7ccae));
+  background: linear-gradient(0deg, #b3717a, #f7ccae);
 }
 
 .footer__xing {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8B4EB5), to(#7E92E5));
-  background: linear-gradient(0deg, #8B4EB5, #7E92E5);
+  background: -webkit-gradient(linear, left bottom, left top, from(#8b4eb5), to(#7e92e5));
+  background: linear-gradient(0deg, #8b4eb5, #7e92e5);
 }
 
 .footer__vimeo {
-  background: -webkit-gradient(linear, left bottom, left top, from(#578DE7), to(#40CFE0));
-  background: linear-gradient(0deg, #578DE7, #40CFE0);
+  background: -webkit-gradient(linear, left bottom, left top, from(#578de7), to(#40cfe0));
+  background: linear-gradient(0deg, #578de7, #40cfe0);
 }
 
 .footer__vk {
-  background: -webkit-gradient(linear, left bottom, left top, from(#F59083), to(#FBD78C));
-  background: linear-gradient(0deg, #F59083, #FBD78C);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f59083), to(#fbd78c));
+  background: linear-gradient(0deg, #f59083, #fbd78c);
 }
 
 .footer__title {
@@ -1002,6 +1025,11 @@ p {
   height: 98px;
   background-color: #ffff;
   border: 0.5px solid #e6e4e4;
+}
+
+.box-shadow-container {
+  -webkit-box-shadow: 0 0 4px 4px #E0E0E0;
+          box-shadow: 0 0 4px 4px #E0E0E0;
 }
 
 .content-bottom-container {

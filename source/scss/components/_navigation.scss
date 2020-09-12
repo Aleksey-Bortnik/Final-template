@@ -1,6 +1,6 @@
 .nav-container {
   width: 74px;
-  height: 1000px;
+  height: 1004px;
   background: linear-gradient(to top, #fd5272, #fc725c);
   display: flex;
   flex-direction: column;
@@ -16,7 +16,10 @@
 }
 
 .nav {
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .nav__logo-symbol {
@@ -26,8 +29,18 @@
   font-weight: bolder;
 }
 
+.nav__group {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav__link {
   text-decoration: none;
   color: #ffffff;
   font-size: 10px;
+  padding-top: 20px; 
+}
+
+.nav__link:last-child {
+  padding-bottom: 20px; 
 }
