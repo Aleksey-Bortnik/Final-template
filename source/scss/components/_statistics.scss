@@ -1,11 +1,12 @@
-.static {
+.statistics {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: #ffff;
+  background-color: #ffffff;
   border: 0.5px solid #e6e4e4;
 }
-.header__static-cards {
+
+.header__statistics-cards {
   text-align: left;
   justify-content: space-around;
 }
@@ -18,7 +19,7 @@
   font-weight: 700;
 }
 
-.header__static-numerical-indicator {
+.header__statistics-numerical-indicator {
   margin: 0;
   justify-content: space-around;
   font-size: 22px;
@@ -29,7 +30,7 @@
   background-image: linear-gradient(120deg, #fd5272, #ea6d54);
 }
 
-.header__plus-static-button {
+.header__add-statistics-btn {
   border: none;
   background: none;
   font-size: 17px;
