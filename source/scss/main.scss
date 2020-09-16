@@ -2,7 +2,7 @@
 
 @import "./components/user";
 
-@import "./components/static";
+@import "./components/statistics";
 
 @import "./components/schedule";
 
@@ -39,7 +39,7 @@ p {
   margin: 0;
 }
 //---------------------------------------------
-.growth-statistics {
+.growth-static {
   font-size: 9px;
   font-weight: 200;
   color: #777777;
@@ -114,8 +114,6 @@ p {
   background-color: #ffff;
 }
 
-
-
 .box-shadow-container {
   box-shadow: 0 0 4px 4px #E0E0E0;
 }
@@ -139,3 +137,5 @@ p {
   display: flex;
   flex: 1 1;
 }
+
+ 

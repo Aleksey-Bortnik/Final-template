@@ -1,4 +1,3 @@
-
 .revenue {
   width: 265px;
   margin-left: 20px;
@@ -30,7 +29,7 @@
   &__currency {
     font-size: 25px;
     font-weight: 700;
-    color: transparent;    
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to right, #b26ae1, #6a5bb4);
@@ -40,10 +39,10 @@
     display: flex;
     justify-content: center;
   }
-}
 
-.revenue__title{
-  font-size: 14px;
-  font-weight: 700;
-  color: #777777;
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
   }
+}

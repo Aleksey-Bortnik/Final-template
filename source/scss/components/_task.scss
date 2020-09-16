@@ -10,72 +10,70 @@
   position: relative;
   padding: 11px 9px 14px 11px;
   background: #fdfeff;
-}
 
-.task__title {
-  color: #777777;
-  font-size: 14px;
-  font-weight: 700;
+  &__title {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-}
-
-.task::-webkit-scrollbar {
-  width: 5px;
-  height: 12px;
-}
-.task::-webkit-scrollbar-track-piece {
-  background: #f1f1f1;
-}
-.task::-webkit-scrollbar-thumb:vertical {
-  height: 10px;
-  background: #f1f1f1;
-}
-.task::-webkit-scrollbar-thumb:vertical:hover {
-  background: #fc6c61;
-}
-//w3c code :)
-.custom-checkbox-container {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb:vertical:hover {
+    background: #fc6c61;
+  }
+  //w3c code :)
+  .custom-checkbox-container {
     width: 18px;
     margin-right: 7px;
-}
+  }
 
-.custom-checkbox {
+  .custom-checkbox {
     position: relative;
-}
+  }
 
-.custom-checkbox input {
+  .custom-checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-}
+  }
 
-.checkmark {
+  .checkmark {
     position: absolute;
     top: 0;
     height: 17px;
     width: 17px;
-    border: 1px solid #EDEDED;
+    border: 1px solid #ededed;
     border-radius: 50%;
-}
+  }
 
-.custom-checkbox input:checked~.checkmark {
-    background-color: #FC6664;
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #fc6664;
     border: initial !important;
-}
+  }
 
-.checkmark:after {
+  .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-}
+  }
 
-.custom-checkbox input:checked~.checkmark:after {
+  .custom-checkbox input:checked ~ .checkmark:after {
     display: block;
-}
+  }
 
-.custom-checkbox .checkmark:after {
+  .custom-checkbox .checkmark:after {
     left: 6px;
     top: 2px;
     width: 5px;
@@ -85,30 +83,31 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+  }
 
-.task__description {
-  color: #fc6962;
-  font-size: 13px;
-  font-weight: 900;
-}
+  &__description {
+    color: #fc6962;
+    font-size: 13px;
+    font-weight: 900;
+  }
 
-.task__container {
-  padding: 10px 5px;
-  display: flex;
-  border-top: 1px solid beige;
-}
+  &__container {
+    padding: 10px 5px;
+    display: flex;
+    border-top: 1px solid beige;
+  }
 
-.task__container:last-child {
-  border-bottom: 1px solid beige;
-}
+  &__container:last-child {
+    border-bottom: 1px solid beige;
+  }
 
-.task__text {
-  font-size: 13px;
-  line-height: 19.34px;
-}
+  &__text {
+    font-size: 13px;
+    line-height: 19.34px;
+  }
 
-.task__time {
-  flex-grow: 1;
-  text-align: end;
+  &__time {
+    flex-grow: 1;
+    text-align: end;
+  }
 }

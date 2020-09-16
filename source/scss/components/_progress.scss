@@ -1,14 +1,11 @@
+.progress {
+  text-align: center;
+  padding: 10px;
+  height: 245px;
+  width: 242px;
+  background-color: #ffffff;
 
-
-  .progress {
-    text-align: center;
-    padding: 10px;
-    height: 245px;
-    width: 242px;
-    background-color: #ffffff;
-  }
-  
-  .progress__img {
+  &__img {
     width: 187px;
     height: 115px;
     background-image: url(../.././source/img/main/progress/progress-diagram.png);
@@ -18,15 +15,15 @@
     background-position-x: 20px;
   }
 
-  .progress__title{
+  &__title {
     font-size: 14px;
     font-weight: 700;
     color: #777777;
-    }
+  }
 
-    .progress__amount {
-      font-size: 20px;
-  font-weight: 700;
-  color: #844BB6;
-    }
-  
+  &__amount {
+    font-size: 20px;
+    font-weight: 700;
+    color: #844bb6;
+  }
+}
