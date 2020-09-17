@@ -1,7 +1,7 @@
 .feedback {
-  padding: 10px;
-  width: 467px;
-  height: 508px;
+  flex-basis: 50%;
+  padding: 10px 25px 10px 10px;
+  height: calc(64vh - 107.33px);
   background-color: rgb(255, 255, 255);
 
   &__block {
@@ -20,6 +20,7 @@
   }
 
   &__background {
+    flex-basis: 100%;
     background-color: #f1f1f1;
     border: 0.5px solid #dbdbdb;
     padding: 20px;
@@ -34,6 +35,10 @@
     display: flex;
     margin-bottom: 20px;
     font-size: 12px;
+  }
+
+  &__user-text-container {
+    flex-basis: 100%;
   }
 
   &__user-comment-container {

@@ -12,7 +12,7 @@
 
 <body>
     <!-- =============================================== navigation =============================================== -->
-    <!-- <div class="nav-container">
+    <div class="nav-container">
         <div class="nav__logo">
             <a href="https://wh40k.lexicanum.com/wiki/Waaagh!" class="nav__logo-symbol">W</a>
         </div>
@@ -48,9 +48,9 @@
 
         </nav>
 
-    </div> -->
+    </div>
     <!-- =============================================== header =============================================== -->
-    <div class="wrapper">
+    <div class="main-content-container">
         <header class="header">
             <!-- =============================================== user =============================================== -->
             <div class="user">
@@ -64,13 +64,14 @@
                     <button class="user__settings"></button>
                 </div>
 
-                <input type="search" placeholder="Search Anything Here..." class="user__central-search-menu">
+                <div class="user__central-search-menu-container">
+                    <input class="user__central-search-menu" type="search" placeholder="Search Anything Here...">
+                </div>
 
                 <div class="user__right-buttons">
                     <button class="user__upload"></button>
                     <button class="user__mail"></button>
-                    <button class="user__earth">
-</button>
+                    <button class="user__earth"></button>
 
                     <div class="user__data">
                         <img src="./source/img/header/user-photo.png" alt="user photo">
@@ -89,10 +90,8 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         150,0000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
@@ -102,10 +101,8 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         120,0000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
@@ -115,10 +112,8 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         900,000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
@@ -128,10 +123,8 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         850,000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
@@ -141,23 +134,19 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         750,000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
-
+                <!--======================================================================================================================-->
                 <div class="header__statistics-cards">
                     <div>
                         <h4 class="header__cards-title">Daily Revenue</h4>
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         &#36;985,000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
@@ -167,16 +156,13 @@
                     </div>
                     <p class="header__statistics-numerical-indicator">
                         600,000<br>
-                        <span class="triangle triangle-up"></span>
-                        <span class="growth-static">1020</span>
-                        <span class="triangle triangle-down"></span>
-                        <span class="growth-static">1020</span>
+                        <span class="growth-static growth-static-up">1020</span>
+                        <span class="growth-static growth-static-down">1020</span>
                     </p>
                 </div>
 
                 <button class="header__add-statistics-btn">+ Add Statics</button>
             </div>
-
 
         </header>
         <!-- =============================================== main =============================================== -->
@@ -185,7 +171,7 @@
 
                 <div class="charts">
                     <!-- =============================================== schedule ================================ -->
-                    <!-- <div class="schedule box-shadow-container">
+                    <div class="schedule box-shadow-container">
                         <div class="schedule__btn">
                             <div class="schedule__title">Monthly Revenue Progress</div>
                             <button class="schedule__ellipse-button">
@@ -200,9 +186,9 @@
                         </div>
 
 
-                    </div> -->
+                    </div>
                     <!-- =============================================== revenue ==================================== -->
-                    <!-- <section class="revenue box-shadow-container">
+                    <section class="revenue box-shadow-container">
                         <h2 class="revenue__title">Revenue Per Hour</h2>
 
                         <div class="revenue__circle">
@@ -211,18 +197,16 @@
                             </div>
                         </div>
                         <div class="revenue-numerical-indicator">
-                            <span class="triangle triangle-up"></span>
-                            <span class="growth-statistics">1020</span>
-                            <span class="triangle triangle-down"></span>
-                            <span class="growth-statistics">1020</span>
+                            <span class="growth-static growth-static-up">1020</span>
+                            <span class="growth-static growth-static-down">1020</span>
                         </div>
 
-                    </section> -->
-                    
+                    </section>
+
                 </div>
                 <div class="content-bottom-container">
                     <!-- =============================================== feedback ==================================== -->
-                    <!-- <div class="feedback box-shadow-container">
+                    <div class="feedback box-shadow-container vertical-scrollbar">
 
                         <h3 class="feedback__title">Customers Feed</h3>
                         <div class="feedback__block">
@@ -276,144 +260,143 @@
                             </div>
 
                         </div>
-                    </div> -->
+                    </div>
                     <div class="dynamic-menu">
                         <!-- =============================================== task ===================================== -->
-                        <!-- <div class="task box-shadow-container">
+                        <div class="task box-shadow-container">
                             <h3 class="task__title">Today Task</h3>
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                            <div class="vertical-scrollbar task__items">
+                                <div class="task__container ">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Arrange</span>
+                                        simply dummy text of the printing and......
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">12:24 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Arrange</span>
-                                    simply dummy text of the printing and......
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">12:24 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Shipments</span>
+                                        simply dummy text of the printing and......
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">12:31 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Shipments</span>
-                                    simply dummy text of the printing and......
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">12:31 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Make List</span>
+                                        simply dummy text of the printing and......
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">12:41 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Make List</span>
-                                    simply dummy text of the printing and......
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">12:41 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Review</span>
+                                        simply dummy text of the printing and......
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">12:59 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Review</span>
-                                    simply dummy text of the printing and......
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">12:59 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Check Oil level</span>
+                                        and take the car to the service......
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">1:01 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Check Oil level</span>
-                                    and take the car to the service......
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">1:01 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Finish the layout</span>
+                                        and have time to pass it on time.....
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">1:35 AM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Finish the layout</span>
-                                    and have time to pass it on time.....
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">1:35 AM</div>
-                            </div>
 
-                            <div class="task__container">
-                                <div class="custom-checkbox-container">
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="task__container">
+                                    <div class="custom-checkbox-container">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <p class="task__text">
+                                        <span class="task__description">Sell a Motorcycle</span>
+                                        and open the champagne.........
+                                    </p>
+                                    <div class="task__time"><img src="./source/img/main/task/clock.png">4:04 PM</div>
                                 </div>
-                                <p class="task__text">
-                                    <span class="task__description">Sell a Motorcycle</span>
-                                    and open the champagne.........
-                                </p>
-                                <div class="task__time"><img src="./source/img/main/task/clock.png">4:04 PM</div>
                             </div>
+                        </div>
 
-
-
-                        </div> -->
                         <div class="dynamic-menu__progress-shipments">
                             <!-- =============================================== progress ========================================= -->
-                            <!-- <div class="progress box-shadow-container">
+                            <div class="progress box-shadow-container">
                                 <h3 class="progress__title">Progress</h3>
-                                <div class="progress__img"></div>
+                                <div class="progress__img-container">
+                                    <img class="progress__img"
+                                        src="../.././source/img/main/progress/progress-diagram.png">
+                                </div>
                                 <div class="progress__growth-statistics">
                                     <div class="progress__amount">&#36;150,0000</div>
                                     <div class="progress__static-numerical-indicator">
-                                        <span class="triangle triangle-up"></span>
-                                        <span class="growth-statistics">1020</span>
-                                        <span class="triangle triangle-down"></span>
-                                        <span class="growth-statistics">1020</span>
+                                        <span class="growth-static growth-static-up">1020</span>
+                                        <span class="growth-static growth-static-down">1020</span>
                                     </div>
                                 </div>
-
-
-
-                            </div> -->
+                            </div>
                             <!-- =============================================== shipments ========================================= -->
-                            <!-- <div class="shipments box-shadow-container">
+                            <div class="shipments box-shadow-container">
                                 <h3 class="shipments__title">Shipments</h3>
-                                <div class="shipments__img"></div>
+                                <div class="shipments__img-container">
+                                    <img class="shipments__img"
+                                        src="../.././source/img/main/shipments/shipments-map.png">
+                                </div>
                                 <div class="shipments__growth-statistics">
                                     <div class="shipments__amount">&#36;15,000</div>
                                     <div class="shipments__static-numerical-indicator">
-                                        <span class="triangle triangle-up"></span>
-                                        <span class="growth-statistics">1020</span>
-                                        <span class="triangle triangle-down"></span>
-                                        <span class="growth-statistics">1020</span>
+                                        <span class="growth-static growth-static-up">1020</span>
+                                        <span class="growth-static growth-static-down">1020</span>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,7 +404,7 @@
             <!-- =============================================== social =============================================== -->
             <div class="social">
                 <!-- =============================================== contacts =============================================== -->
-                <!-- <div class="contacts">
+                <div class="contacts">
                     <div class="contacts__links">
                         <a class="contacts__link button__users" href=""><img class="contacts__users"
                                 src="source/img/main/contacts/users.png" alt="users"></a>
@@ -431,7 +414,7 @@
                                 src="source/img/main/contacts/like.png" alt="like"></a>
                     </div>
 
-                    <div class="contacts__persons-scroll">
+                    <div class="contacts__persons-scroll vertical-scrollbar">
 
                         <div class="contacts__person">
                             <div>
@@ -588,20 +571,20 @@
                         </div>
                     </div>
 
-                    <div class="contact__search">
-                        <div class="contact__search-input-container">
+                    <div class="contacts__search">
+                        <div class="contacts__search-input-container">
                             <input placeholder="Search Peoples, Chats and Reviews">
                         </div>
-                        <div class="contact__button-container">
+                        <div class="contacts__button-container">
                             <img src="source/img/main/contacts/zoom.png">
                         </div>
-                        <div class="contact__button-container">
+                        <div class="contacts__button-container">
                             <img src="source/img/main/contacts/edit.png">
                         </div>
                     </div>
 
                 </div>
-                 <footer class="footer">
+                <footer class="footer">
                     <h2 class="footer__title">Featured Companys</h2>
                     <div class="footer__links-container">
                         <a class="footer__logo footer__rdio" href="#"><img src="source/img/footer/rdio.png"
@@ -617,13 +600,13 @@
                         <a class="footer__logo footer__vk" href="#"><img src="source/img/footer/vk.png" alt="vk"></a>
 
                     </div>
-                </footer> -->
+                </footer>
             </div>
 
         </main>
 
     </div>
-    <!--wrapper-->
+    <!--main-content-container-->
 </body>
 
 </html>

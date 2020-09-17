@@ -1,90 +1,16 @@
 .task {
   text-align: left;
-  flex: 1 1;
-  margin-bottom: 20px;
-  height: 245px;
-  width: 508px;
-  max-height: 245px;
+  flex-basis: 20%;
+  margin-bottom: 2vh;
+  height: calc(31vh - 54.67px);
   background-color: rgb(247, 247, 247);
-  overflow-y: scroll;
   position: relative;
   padding: 11px 9px 14px 11px;
   background: #fdfeff;
 
-  &__title {
-    color: #777777;
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  &::-webkit-scrollbar {
-    width: 5px;
-    height: 12px;
-  }
-  &::-webkit-scrollbar-track-piece {
-    background: #f1f1f1;
-  }
-  &::-webkit-scrollbar-thumb:vertical {
-    height: 10px;
-    background: #f1f1f1;
-  }
-  &::-webkit-scrollbar-thumb:vertical:hover {
-    background: #fc6c61;
-  }
-  //w3c code :)
-  .custom-checkbox-container {
-    width: 18px;
-    margin-right: 7px;
-  }
-
-  .custom-checkbox {
-    position: relative;
-  }
-
-  .custom-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-
-  .checkmark {
-    position: absolute;
-    top: 0;
-    height: 17px;
-    width: 17px;
-    border: 1px solid #ededed;
-    border-radius: 50%;
-  }
-
-  .custom-checkbox input:checked ~ .checkmark {
-    background-color: #fc6664;
-    border: initial !important;
-  }
-
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  .custom-checkbox input:checked ~ .checkmark:after {
-    display: block;
-  }
-
-  .custom-checkbox .checkmark:after {
-    left: 6px;
-    top: 2px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
+  &__items {
+height: calc(31vh - 139.11px)
+}
   &__description {
     color: #fc6962;
     font-size: 13px;
@@ -107,7 +33,7 @@
   }
 
   &__time {
-    flex-grow: 1;
-    text-align: end;
+     flex-grow: 1;
+     text-align: end;
   }
 }

@@ -1,7 +1,8 @@
 .schedule {
+  flex-basis: 70%;
   padding: 10px;
-  width: 704px;
-  height: 266px;
+  min-width: 704px;
+  height: calc(31vh - 54.67px);
   background-color: #ffffff;
   background-image: url(../.././source/img/main/schedule/schedule.png);
   background-repeat: no-repeat;

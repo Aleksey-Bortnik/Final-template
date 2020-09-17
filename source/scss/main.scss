@@ -31,77 +31,63 @@
 
 body {
   display: flex;
-  width: 1378px;
+  flex: 1 1 100%;
   margin: 0 auto;
   font-family: lato;
 }
 p {
   margin: 0;
 }
-//---------------------------------------------
+
+.main-content-container {
+  display: flex;
+  background-color: #f1f1f1;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-basis: 100%;
+}
+
 .growth-static {
   font-size: 9px;
   font-weight: 200;
   color: #777777;
 }
 
-.triangle {
-  position: relative;
-  font-size: 7px;
-  margin: 5px;
+.vertical-scrollbar {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb:vertical:hover {
+    background: #fc6c61;
+  }
 }
 
-.triangle.triangle-up::before {
-  content: "";
-  position: absolute;
-  bottom: 1.5px;
-  left: 1px;
-  transform: rotate(59deg);
-  border: 4.04px solid #ffffff;
+.growth-static-up::before {
+  content: url("/source/img/triangles/triangle-up.png");
+  padding-right: 3px;
 }
 
-.triangle.triangle-up::after {
-  content: "";
-  position: absolute;
-  bottom: 1.5px;
-  right: 1px;
-  transform: rotate(31deg);
-  border: 5px solid #ffffff;
-}
-
-.triangle.triangle-up {
-  border-left: 4px solid #a889e9;
-  border-right: 4px solid #a889e9;
-}
-
-.triangle.triangle-down {
-  border-left: 4px solid #fd5670;
-  border-right: 4px solid #fd5670;
-}
-
-.triangle.triangle-down::before {
-  content: "";
-  padding-top: 2px;
-  position: absolute;
-  top: 1.7px;
-  left: 1px;
-  transform: rotate(30deg);
-  border: 4.04px solid #ffffff;
-}
-
-.triangle.triangle-down::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  top: 0.5px;
-  right: 1px;
-  transform: rotate(59deg);
-  border: 5px solid #ffffff;
-}
-//---------------------------------------------
-
-.wrapper {
-  background-color: #f1f1f1;
+.growth-static-down::before {
+  content: url("/source/img/triangles/triangle-down.png");
+  padding: 0 3px;
 }
 
 .main {
@@ -109,28 +95,27 @@ p {
 }
 
 .user {
-  width: 1298px;
   height: 71px;
   background-color: #ffff;
 }
 
 .box-shadow-container {
-  box-shadow: 0 0 4px 4px #E0E0E0;
+  box-shadow: 0 0 4px 4px #e0e0e0;
 }
 
-.content-bottom-container{
+.content-bottom-container {
   display: flex;
-  margin: 20px;
+  margin: 2vh 2vh 0 2vh;
 }
 
 .charts {
-  margin: 20px;
+  margin: 2vh;
   display: flex;
 }
 
 .dynamic-menu {
-  flex: 1 1;
-  margin-left: 20px;
+  flex-basis: 60%;
+  margin-left: 2vh;
 }
 
 .dynamic-menu__progress-shipments {
@@ -138,4 +123,61 @@ p {
   flex: 1 1;
 }
 
- 
+ //w3c code :)
+ .custom-checkbox-container {
+  width: 18px;
+  margin-right: 7px;
+}
+
+.custom-checkbox {
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  height: 17px;
+  width: 17px;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #fc6664;
+  border: initial !important;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.dynamic-menu {
+  flex-basis: 100%;
+
+}

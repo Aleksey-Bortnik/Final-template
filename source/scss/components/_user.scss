@@ -76,8 +76,15 @@
     display: flex;
   }
 
+  &__central-search-menu-container {
+    flex: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   &__central-search-menu {
-    width: 299px;
+    flex: 0 0 50%;
     height: 34px;
     border-radius: 22px;
     border-color: #f1f1f1;

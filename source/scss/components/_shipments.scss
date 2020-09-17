@@ -1,19 +1,13 @@
 .shipments {
+  flex-basis: 50%;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 2vh;
   padding: 10px;
-  width: 241px;
-  height: 245px;
+  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 
   &__img {
-    width: 187px;
-    height: 115px;
-    background-image: url(../.././source/img/main/shipments/shipments-map.png);
-    background-repeat: no-repeat;
-    background-size: 98%;
-    background-position-y: 50%;
-    background-position-x: 50%;
+    height: calc(27vh - 110px);
   }
 
   &__growth-statistics {

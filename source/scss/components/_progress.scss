@@ -1,18 +1,13 @@
 .progress {
+  flex-basis: 50%;
   text-align: center;
   padding: 10px;
-  height: 245px;
-  width: 242px;
+  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 
   &__img {
-    width: 187px;
-    height: 115px;
-    background-image: url(../.././source/img/main/progress/progress-diagram.png);
-    background-repeat: no-repeat;
-    background-size: 98%;
-    background-position-y: 50%;
-    background-position-x: 20px;
+    height: calc(27vh - 125px);
+    
   }
 
   &__title {
