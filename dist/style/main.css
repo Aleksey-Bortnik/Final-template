@@ -945,12 +945,12 @@ p {
 }
 
 .growth-static-up::before {
-  content: url("/source/img/triangles/triangle-up.png");
+  content: url("./../../source/img/triangles/triangle-up.png");
   padding-right: 3px;
 }
 
 .growth-static-down::before {
-  content: url("/source/img/triangles/triangle-down.png");
+  content: url("./../../source/img/triangles/triangle-down.png");
   padding: 0 3px;
 }
 
