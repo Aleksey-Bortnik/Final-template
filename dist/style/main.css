@@ -144,7 +144,7 @@
 }
 
 .user__folder {
-  background-image: url(/source/img/header/btn-icons/folder.png);
+  background-image: url(./../../source/img/header/btn-icons/folder.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -154,7 +154,7 @@
 }
 
 .user__settings {
-  background-image: url(/source/img/header/btn-icons/settings.png);
+  background-image: url(./../../source/img/header/btn-icons/settings.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -212,7 +212,7 @@
 }
 
 .user__mail {
-  background-image: url(/source/img/header/btn-icons/mail.png);
+  background-image: url(./../../source/img/header/btn-icons/mail.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -223,7 +223,7 @@
 }
 
 .user__earth {
-  background-image: url(/source/img/header/btn-icons/earth.png);
+  background-image: url(./../../source/img/header/btn-icons/earth.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
