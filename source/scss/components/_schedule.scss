@@ -4,10 +4,6 @@
   min-width: 704px;
   height: calc(31vh - 54.67px);
   background-color: #ffffff;
-  background-image: url(../.././source/img/main/schedule/schedule.png);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-position-x: 50%;
 
   &__ellipse-button {
     display: flex;
@@ -44,5 +40,13 @@
     font-size: 14px;
     font-weight: 700;
     color: #777777;
+  }
+
+  &__img-container {
+    text-align: center;
+  }
+
+  &__img {
+    height: calc(31vh - 98.67px)
   }
 }

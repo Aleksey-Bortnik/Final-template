@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    flex-direction: column;
+    background-color: rgba(128, 127, 127, 0.692);
+  }
+
+  .nav {
+    &-container {
+      width: initial;
+      height: 59vh;
+      margin-bottom: 10px;
+      box-shadow: 0 0 4px 4px #e0e0e0;
+    }
+
+    &__logo {
+      border-radius: 50%;
+      position: static;
+    }
+  }
+
+  .user {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+    box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap-reverse;
+    box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+
+  .header__statistics-cards {
+    width: 120px;
+  }
+
+  .header__statistics-numerical-indicator {
+    font-size: 15px;
+  }
+
+  .schedule {
+    height: initial;
+    width: 375px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+
+    &__img {
+      height: initial;
+    }
+  }
+
+  main {
+    flex-direction: column;
+    background-color: rgba(128, 127, 127, 0.692);
+  }
+
+  .charts {
+    flex-direction: column;
+  }
+
+  .content-bottom-container {
+    flex-direction: column;
+  }
+
+  .dynamic-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .dynamic-menu__progress-shipments {
+    flex-direction: column;
+  }
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 90vw;
+    margin-left: 12px;
+  }
+
+  .task {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 133vh;
+  }
+
+  .revanue {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .progress {
+    margin-bottom: 20px;
+  }
+
+  .shipments {
+    width: 333px;
+    margin: 0;
+  }
+
+  .contacts {
+    width: 90vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+
+  .footer {
+    box-shadow: 0 0 4px 4px #e0e0e0;
+    margin: 20px;
+    width: initial;
+  }
+}
+
+@media (max-width: 576px) {
+}

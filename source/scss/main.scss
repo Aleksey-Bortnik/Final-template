@@ -123,8 +123,8 @@ p {
   flex: 1 1;
 }
 
- //w3c code :)
- .custom-checkbox-container {
+//w3c code :)
+.custom-checkbox-container {
   width: 18px;
   margin-right: 7px;
 }
@@ -179,5 +179,6 @@ p {
 
 .dynamic-menu {
   flex-basis: 100%;
-
 }
+
+@import "./global/_media.scss";

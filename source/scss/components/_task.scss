@@ -17,6 +17,13 @@ height: calc(31vh - 139.11px)
     font-weight: 900;
   }
 
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
+    margin: 11px 0;
+  }
+
   &__container {
     padding: 10px 5px;
     display: flex;

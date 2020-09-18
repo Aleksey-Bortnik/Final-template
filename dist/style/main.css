@@ -309,10 +309,6 @@
   min-width: 704px;
   height: calc(31vh - 54.67px);
   background-color: #ffffff;
-  background-image: url(../.././source/img/main/schedule/schedule.png);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  background-position-x: 50%;
 }
 
 .schedule__ellipse-button {
@@ -359,6 +355,14 @@
   font-size: 14px;
   font-weight: 700;
   color: #777777;
+}
+
+.schedule__img-container {
+  text-align: center;
+}
+
+.schedule__img {
+  height: calc(31vh - 98.67px);
 }
 
 .revenue {
@@ -527,6 +531,13 @@
   color: #fc6962;
   font-size: 13px;
   font-weight: 900;
+}
+
+.task__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+  margin: 11px 0;
 }
 
 .task__container {
@@ -1054,5 +1065,152 @@ p {
 .dynamic-menu {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(128, 127, 127, 0.692);
+  }
+  .nav-container {
+    width: initial;
+    height: 59vh;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 4px 4px #e0e0e0;
+            box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+  .nav__logo {
+    border-radius: 50%;
+    position: static;
+  }
+  .user {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 4px 4px #e0e0e0;
+            box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: wrap-reverse;
+        flex-flow: wrap-reverse;
+    -webkit-box-shadow: 0 0 4px 4px #e0e0e0;
+            box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+  .header__statistics-cards {
+    width: 120px;
+  }
+  .header__statistics-numerical-indicator {
+    font-size: 15px;
+  }
+  .schedule {
+    height: initial;
+    width: 375px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+  }
+  .schedule__img {
+    height: initial;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(128, 127, 127, 0.692);
+  }
+  .charts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-bottom-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dynamic-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dynamic-menu__progress-shipments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+    width: 90vw;
+    margin-left: 12px;
+  }
+  .task {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+    height: 133vh;
+  }
+  .revanue {
+    width: 90vw;
+    margin: 0;
+  }
+  .progress {
+    margin-bottom: 20px;
+  }
+  .shipments {
+    width: 333px;
+    margin: 0;
+  }
+  .contacts {
+    width: 90vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 0 4px 4px #e0e0e0;
+            box-shadow: 0 0 4px 4px #e0e0e0;
+  }
+  .footer {
+    -webkit-box-shadow: 0 0 4px 4px #e0e0e0;
+            box-shadow: 0 0 4px 4px #e0e0e0;
+    margin: 20px;
+    width: initial;
+  }
 }
 /*# sourceMappingURL=main.css.map */
