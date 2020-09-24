@@ -29,12 +29,13 @@
   box-sizing: border-box;
 }
 
-body {
+.wrapper {
   display: flex;
   flex: 1 1 100%;
   margin: 0 auto;
   font-family: lato;
 }
+
 p {
   margin: 0;
 }
