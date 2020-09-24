@@ -326,6 +326,7 @@
   width: 68px;
   height: 24px;
   border-radius: 11px;
+  line-height: 22px;
 }
 
 .schedule__btn {
@@ -335,10 +336,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.schedule__name-btn {
-  margin: auto;
 }
 
 .schedule__day-button {

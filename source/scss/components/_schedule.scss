@@ -15,15 +15,12 @@
     width: 68px;
     height: 24px;
     border-radius: 11px;
+    line-height: 22px;
   }
 
   &__btn {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__name-btn {
-    margin: auto;
   }
 
   &__day-button {
