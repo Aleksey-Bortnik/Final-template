@@ -4,8 +4,6 @@ flex-basis: 30%;
   background: #fff;
   text-align: center;
 
-  //calc(31vh - 54.67px);
-
   &__circle {
     display: flex;
     align-items: center;
@@ -23,7 +21,6 @@ flex-basis: 30%;
     align-items: center;
     justify-content: center;
     width: calc(31vh - 142px);
-    height: calc(31vh - 142px);
     border-radius: 50%;
     background: #fff;
   }

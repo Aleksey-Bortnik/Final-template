@@ -29,11 +29,15 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
-  flex: 1 1 100%;
   margin: 0 auto;
   font-family: lato;
+  max-width: 1366px;
 }
 
 p {
@@ -57,9 +61,11 @@ p {
 }
 
 .growth-static {
+  position: relative;
   font-size: 9px;
   font-weight: 200;
   color: #777777;
+  margin: 4px;
 }
 
 .vertical-scrollbar {
@@ -69,26 +75,44 @@ p {
     width: 5px;
     height: 12px;
   }
+
   &::-webkit-scrollbar-track-piece {
     background: #f1f1f1;
   }
+
   &::-webkit-scrollbar-thumb:vertical {
     height: 10px;
     background: #f1f1f1;
   }
+
   &::-webkit-scrollbar-thumb:vertical:hover {
     background: #fc6c61;
   }
 }
 
 .growth-static-up::before {
-  content: url("./../../source/img/triangles/triangle-up.png");
-  padding-right: 3px;
+  position: absolute;
+  right: 21px;
+  bottom: 2px;
+  content: "";
+  font-size: 9px;
+  color: #777777;
+  border: 4px solid transparent;
+  border-bottom: 7px solid #a889e9;
+  width: 0;
+  height: 0;
+  margin: 0;
 }
 
 .growth-static-down::before {
-  content: url("./../../source/img/triangles/triangle-down.png");
-  padding: 0 3px;
+  position: absolute;
+  right: 22px;
+  top: 3px;
+  content: "";
+  border: 4px solid transparent;
+  border-top: 7px solid #FD5670;
+  width: 0;
+  height: 0;
 }
 
 .main {
@@ -124,7 +148,7 @@ p {
   flex: 1 1;
 }
 
-//w3c code :)
+//=========================checkbox
 .custom-checkbox-container {
   width: 18px;
   margin-right: 7px;
@@ -177,6 +201,7 @@ p {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+//========================/checkbox
 
 .dynamic-menu {
   flex-basis: 100%;

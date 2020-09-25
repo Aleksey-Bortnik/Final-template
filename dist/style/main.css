@@ -1,6 +1,5 @@
 .nav-container {
   width: 74px;
-  height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#fc725c));
   background: linear-gradient(to top, #fd5272, #fc725c);
   display: -webkit-box;
@@ -19,7 +18,7 @@
   border-radius: 1.5px;
   background-color: #ffffff;
   font-family: Courgette;
-  color: #FC725C;
+  color: #fc725c;
 }
 
 .nav {
@@ -307,7 +306,6 @@
       flex-basis: 70%;
   padding: 10px;
   min-width: 704px;
-  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 }
 
@@ -359,7 +357,7 @@
 }
 
 .schedule__img {
-  height: calc(31vh - 98.67px);
+  width: 650px;
 }
 
 .revenue {
@@ -399,7 +397,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: calc(31vh - 142px);
-  height: calc(31vh - 142px);
   border-radius: 50%;
   background: #fff;
 }
@@ -433,8 +430,9 @@
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 10px 25px 10px 10px;
-  height: calc(64vh - 107.33px);
+  height: 493px;
   background-color: white;
+  margin-bottom: 10px;
 }
 
 .feedback__block {
@@ -513,7 +511,7 @@
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin-bottom: 2vh;
-  height: calc(31vh - 54.67px);
+  height: 245px;
   background-color: #f7f7f7;
   position: relative;
   padding: 11px 9px 14px 11px;
@@ -521,7 +519,7 @@
 }
 
 .task__items {
-  height: calc(31vh - 139.11px);
+  height: 190px;
 }
 
 .task__description {
@@ -566,12 +564,11 @@
       flex-basis: 50%;
   text-align: center;
   padding: 10px;
-  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 }
 
 .progress__img {
-  height: calc(27vh - 125px);
+  width: 187px;
 }
 
 .progress__title {
@@ -592,12 +589,11 @@
   text-align: center;
   margin-left: 2vh;
   padding: 10px;
-  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 }
 
 .shipments__img {
-  height: calc(27vh - 110px);
+  width: 187px;
 }
 
 .shipments__growth-statistics {
@@ -611,6 +607,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px;
 }
 
 .shipments__title {
@@ -635,7 +632,7 @@
 }
 
 .contacts__persons-scroll {
-  height: calc(100vh - 477.67px);
+  height: 456px;
 }
 
 .contacts__links {
@@ -881,15 +878,17 @@
           box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
   margin: 0 auto;
   font-family: lato;
+  max-width: 1366px;
 }
 
 p {
@@ -925,9 +924,11 @@ p {
 }
 
 .growth-static {
+  position: relative;
   font-size: 9px;
   font-weight: 200;
   color: #777777;
+  margin: 4px;
 }
 
 .vertical-scrollbar {
@@ -953,13 +954,28 @@ p {
 }
 
 .growth-static-up::before {
-  content: url("./../../source/img/triangles/triangle-up.png");
-  padding-right: 3px;
+  position: absolute;
+  right: 21px;
+  bottom: 2px;
+  content: "";
+  font-size: 9px;
+  color: #777777;
+  border: 4px solid transparent;
+  border-bottom: 7px solid #a889e9;
+  width: 0;
+  height: 0;
+  margin: 0;
 }
 
 .growth-static-down::before {
-  content: url("./../../source/img/triangles/triangle-down.png");
-  padding: 0 3px;
+  position: absolute;
+  right: 22px;
+  top: 3px;
+  content: "";
+  border: 4px solid transparent;
+  border-top: 7px solid #FD5670;
+  width: 0;
+  height: 0;
 }
 
 .main {

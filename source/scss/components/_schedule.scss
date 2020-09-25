@@ -2,7 +2,6 @@
   flex-basis: 70%;
   padding: 10px;
   min-width: 704px;
-  height: calc(31vh - 54.67px);
   background-color: #ffffff;
 
   &__ellipse-button {
@@ -44,6 +43,6 @@
   }
 
   &__img {
-    height: calc(31vh - 98.67px)
+    width: 650px;
   }
 }

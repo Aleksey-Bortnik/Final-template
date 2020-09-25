@@ -2,15 +2,16 @@
   text-align: left;
   flex-basis: 20%;
   margin-bottom: 2vh;
-  height: calc(31vh - 54.67px);
+  height: 245px;
   background-color: rgb(247, 247, 247);
   position: relative;
   padding: 11px 9px 14px 11px;
   background: #fdfeff;
 
   &__items {
-height: calc(31vh - 139.11px)
-}
+    height: 190px;
+  }
+  
   &__description {
     color: #fc6962;
     font-size: 13px;
@@ -40,7 +41,7 @@ height: calc(31vh - 139.11px)
   }
 
   &__time {
-     flex-grow: 1;
-     text-align: end;
+    flex-grow: 1;
+    text-align: end;
   }
 }
