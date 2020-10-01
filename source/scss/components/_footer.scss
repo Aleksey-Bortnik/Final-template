@@ -12,6 +12,10 @@
     margin-top: 29px;
   }
 
+  &__elements {
+    list-style-type: none;
+  }
+
   &__links-row {
     display: flex;
     flex-direction: row;

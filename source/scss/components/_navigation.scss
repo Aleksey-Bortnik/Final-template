@@ -15,13 +15,6 @@
   color: #fc725c;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-}
-
 .nav__logo-symbol {
   color: #fc725c;
   text-decoration: none;
@@ -39,18 +32,56 @@
   color: #ffffff;
 }
 
-.nav__group {
+.nav {
+  position: absolute;
   display: flex;
   flex-direction: column;
-}
+  justify-content: center;
+  padding: 0 27px;
+  margin-top: 72px;
+  
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20px;
+    min-height: 70px;
+    padding-bottom: 0.625em;
+    font-size: 12px;
 
-.nav__link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 10px;
-  padding-top: 20px;
-}
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-.nav__link:last-child {
-  padding-bottom: 20px;
+  &__link-home {
+    background: url(/source/img/navigation/nav-btn-icons/home.png) no-repeat
+      center;
+  }
+
+  &__link-statics {
+    background: url(/source/img/navigation/nav-btn-icons/statics.png) no-repeat
+      center;
+  }
+
+  &__link-users {
+    background: url(/source/img/navigation/nav-btn-icons/user.png) no-repeat
+      center;
+  }
+
+  &__link-settings {
+    background: url(/source/img/navigation/nav-btn-icons/settings.png) no-repeat
+      center;
+  }
+
+  &__link-queries {
+    background: url(/source/img/navigation/nav-btn-icons/queries.png) no-repeat
+      center;
+  }
+
+  &__link-power {
+    background: url(/source/img/navigation/nav-btn-icons/power-button.png)
+      no-repeat center;
+    margin-top: 447px;
+  }
 }
