@@ -77,25 +77,67 @@
   background: url(/source/img/navigation/nav-btn-icons/home.png) no-repeat center;
 }
 
+.nav__link-home:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
+}
+
 .nav__link-statics {
   background: url(/source/img/navigation/nav-btn-icons/statics.png) no-repeat center;
+}
+
+.nav__link-statics:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
 }
 
 .nav__link-users {
   background: url(/source/img/navigation/nav-btn-icons/user.png) no-repeat center;
 }
 
+.nav__link-users:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
+}
+
 .nav__link-settings {
   background: url(/source/img/navigation/nav-btn-icons/settings.png) no-repeat center;
+}
+
+.nav__link-settings:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
 }
 
 .nav__link-queries {
   background: url(/source/img/navigation/nav-btn-icons/queries.png) no-repeat center;
 }
 
+.nav__link-queries:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
+}
+
 .nav__link-power {
   background: url(/source/img/navigation/nav-btn-icons/power-button.png) no-repeat center;
   margin-top: 447px;
+}
+
+.nav__link-power:hover {
+  width: 45px;
+  height: 48px;
+  -webkit-box-shadow: 5px 4px 4px 4px #d36352;
+          box-shadow: 5px 4px 4px 4px #d36352;
 }
 
 .user {
@@ -117,6 +159,14 @@
   width: 73px;
   border: none;
   border-right: 1px solid #e6e4e4;
+}
+
+.user__ellipse:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
 }
 
 .user .ellipse-three-dots {
@@ -175,6 +225,15 @@
   padding: 23px 36.5px;
 }
 
+.user__folder:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  opacity: 0.95;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
+}
+
 .user__settings {
   background-image: url(./../../source/img/header/btn-icons/settings.png);
   background-repeat: no-repeat;
@@ -185,6 +244,15 @@
   border: none;
   border-left: 1px solid #e6e4e4;
   border-right: 1px solid #e6e4e4;
+}
+
+.user__settings:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  opacity: 0.95;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
 }
 
 .user__left-buttons {
@@ -212,7 +280,7 @@
           flex: 0 0 50%;
   height: 34px;
   border-radius: 22px;
-  border-color: #f1f1f1;
+  border-color: #fc725c;
 }
 
 .user__right-buttons {
@@ -233,6 +301,15 @@
   border-left: 1px solid #e6e4e4;
 }
 
+.user__upload:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  opacity: 0.95;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
+}
+
 .user__mail {
   background-image: url(./../../source/img/header/btn-icons/mail.png);
   background-repeat: no-repeat;
@@ -244,6 +321,15 @@
   border-right: 1px solid #e6e4e4;
 }
 
+.user__mail:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  opacity: 0.95;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
+}
+
 .user__earth {
   background-image: url(./../../source/img/header/btn-icons/earth.png);
   background-repeat: no-repeat;
@@ -253,6 +339,15 @@
   border: none;
   background-color: #ffffff;
   border-right: 1px solid #e6e4e4;
+}
+
+.user__earth:hover {
+  width: 72px;
+  height: 72px;
+  background-color: #e6e6e6;
+  opacity: 0.95;
+  -webkit-box-shadow: 2px 3px 2px 2px #d36352;
+          box-shadow: 2px 3px 2px 2px #d36352;
 }
 
 .user__data {
@@ -454,7 +549,7 @@
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 10px 25px 10px 10px;
-  height: 493px;
+  height: 513px;
   background-color: white;
   margin-bottom: 10px;
 }
@@ -587,7 +682,7 @@
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   text-align: center;
-  padding: 10px;
+  padding: 21px;
   background-color: #ffffff;
 }
 
@@ -647,9 +742,8 @@
 }
 
 .contacts {
-  width: 273px;
-  background-color: crimson;
   position: relative;
+  width: 273px;
   background: #ffffff;
   font-size: 13px;
   font-weight: 400;
@@ -704,32 +798,46 @@
   height: 16px;
 }
 
+.contacts .button__users {
+  background: url(/source/img/main/contacts/users.png) no-repeat center;
+  width: 34px;
+  height: 34px;
+  padding: 3px;
+}
+
 .contacts .button__users:hover {
   width: 91px;
   height: 48px;
-  background: #c33d5a;
+  -webkit-box-shadow: 5px 0px 7px 5px #fc725c;
+          box-shadow: 5px 0px 7px 5px #fc725c;
 }
 
 .contacts .button__chat {
-  width: 91px;
-  height: 48px;
+  background: url(/source/img/main/contacts/chat.png) no-repeat center;
+  width: 34px;
+  height: 34px;
+  padding: 3px;
 }
 
 .contacts .button__chat:hover {
   width: 91px;
   height: 48px;
-  background: #c33d5a;
+  -webkit-box-shadow: 5px 0 7px 5px #fc725c;
+          box-shadow: 5px 0 7px 5px #fc725c;
 }
 
 .contacts .button__like {
-  width: 91px;
-  height: 48px;
+  background: url(/source/img/main/contacts/like.png) no-repeat center;
+  width: 34px;
+  height: 34px;
+  padding: 3px;
 }
 
 .contacts .button__like:hover {
   width: 91px;
   height: 48px;
-  background: #c33d5a;
+  -webkit-box-shadow: 5px 0px 7px 5px #fc725c;
+          box-shadow: 5px 0px 7px 5px #fc725c;
 }
 
 .contacts__data {
@@ -737,6 +845,7 @@
 }
 
 .contacts__person {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,10 +860,13 @@
 }
 
 .contacts__chat-icon-container {
-  text-align: right;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  position: absolute;
+  left: 205px;
+  bottom: 18px;
+  background: url(/source/img/main/contacts/chat-icon.png) no-repeat center;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
 }
 
 .contacts__chat-icon-line {

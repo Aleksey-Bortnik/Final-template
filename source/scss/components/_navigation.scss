@@ -39,7 +39,7 @@
   justify-content: center;
   padding: 0 27px;
   margin-top: 72px;
-  
+
   &__link {
     position: relative;
     display: flex;
@@ -59,9 +59,21 @@
       center;
   }
 
+  &__link-home:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
+  }
+
   &__link-statics {
     background: url(/source/img/navigation/nav-btn-icons/statics.png) no-repeat
       center;
+  }
+
+  &__link-statics:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
   }
 
   &__link-users {
@@ -69,9 +81,21 @@
       center;
   }
 
+  &__link-users:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
+  }
+
   &__link-settings {
     background: url(/source/img/navigation/nav-btn-icons/settings.png) no-repeat
       center;
+  }
+
+  &__link-settings:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
   }
 
   &__link-queries {
@@ -79,9 +103,21 @@
       center;
   }
 
+  &__link-queries:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
+  }
+
   &__link-power {
     background: url(/source/img/navigation/nav-btn-icons/power-button.png)
       no-repeat center;
     margin-top: 447px;
+  }
+
+  &__link-power:hover {
+    width: 45px;
+    height: 48px;
+    box-shadow: 5px 4px 4px 4px #d36352;
   }
 }

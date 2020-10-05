@@ -11,6 +11,14 @@
     border: none;
     border-right: 1px solid #e6e4e4;
   }
+
+  &__ellipse:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    box-shadow: 2px 3px 2px 2px #d36352;
+  }
+
   .ellipse-three-dots {
     margin: 0 auto;
     display: flex;
@@ -60,6 +68,14 @@
     padding: 23px 36.5px;
   }
 
+  &__folder:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    opacity: 0.95;
+    box-shadow: 2px 3px 2px 2px #d36352;
+  }
+
   &__settings {
     background-image: url(./../../source/img/header/btn-icons/settings.png);
     background-repeat: no-repeat;
@@ -70,6 +86,14 @@
     border: none;
     border-left: 1px solid #e6e4e4;
     border-right: 1px solid #e6e4e4;
+  }
+
+  &__settings:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    opacity: 0.95;
+    box-shadow: 2px 3px 2px 2px #d36352;
   }
 
   &__left-buttons {
@@ -87,7 +111,7 @@
     flex: 0 0 50%;
     height: 34px;
     border-radius: 22px;
-    border-color: #f1f1f1;
+    border-color: #fc725c;
   }
 
   &__right-buttons {
@@ -106,6 +130,14 @@
     border-left: 1px solid #e6e4e4;
   }
 
+  &__upload:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    opacity: 0.95;
+    box-shadow: 2px 3px 2px 2px #d36352;
+  }
+
   &__mail {
     background-image: url(./../../source/img/header/btn-icons/mail.png);
     background-repeat: no-repeat;
@@ -117,6 +149,14 @@
     border-right: 1px solid #e6e4e4;
   }
 
+  &__mail:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    opacity: 0.95;
+    box-shadow: 2px 3px 2px 2px #d36352;
+  }
+
   &__earth {
     background-image: url(./../../source/img/header/btn-icons/earth.png);
     background-repeat: no-repeat;
@@ -126,6 +166,14 @@
     border: none;
     background-color: #ffffff;
     border-right: 1px solid #e6e4e4;
+  }
+
+  &__earth:hover {
+    width: 72px;
+    height: 72px;
+    background-color: #e6e6e6;
+    opacity: 0.95;
+    box-shadow: 2px 3px 2px 2px #d36352;
   }
 
   &__data {
