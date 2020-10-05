@@ -1,2 +1,2 @@
-# lesson-7
-https://aleksey-bortnik.github.io/lesson-7/
+# final temolate
+https://aleksey-bortnik.github.io/Final-template/
