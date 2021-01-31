@@ -69,12 +69,13 @@
   min-height: 70px;
   padding-bottom: 0.625em;
   font-size: 12px;
+  border-radius: 7px;
   text-decoration: none;
   color: #ffffff;
 }
 
 .nav__link-home {
-  background: url(/source/img/navigation/nav-btn-icons/home.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/home.png) no-repeat center;
 }
 
 .nav__link-home:hover {
@@ -85,7 +86,7 @@
 }
 
 .nav__link-statics {
-  background: url(/source/img/navigation/nav-btn-icons/statics.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/statics.png) no-repeat center;
 }
 
 .nav__link-statics:hover {
@@ -96,7 +97,7 @@
 }
 
 .nav__link-users {
-  background: url(/source/img/navigation/nav-btn-icons/user.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/user.png) no-repeat center;
 }
 
 .nav__link-users:hover {
@@ -107,7 +108,7 @@
 }
 
 .nav__link-settings {
-  background: url(/source/img/navigation/nav-btn-icons/settings.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/settings.png) no-repeat center;
 }
 
 .nav__link-settings:hover {
@@ -118,7 +119,7 @@
 }
 
 .nav__link-queries {
-  background: url(/source/img/navigation/nav-btn-icons/queries.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/queries.png) no-repeat center;
 }
 
 .nav__link-queries:hover {
@@ -129,7 +130,7 @@
 }
 
 .nav__link-power {
-  background: url(/source/img/navigation/nav-btn-icons/power-button.png) no-repeat center;
+  background: url(./../../source/img/navigation/nav-btn-icons/power-button.png) no-repeat center;
   margin-top: 447px;
 }
 
@@ -799,7 +800,7 @@
 }
 
 .contacts .button__users {
-  background: url(/source/img/main/contacts/users.png) no-repeat center;
+  background: url(./../../source/img/main/contacts/users.png) no-repeat center;
   width: 34px;
   height: 34px;
   padding: 3px;
@@ -813,7 +814,7 @@
 }
 
 .contacts .button__chat {
-  background: url(/source/img/main/contacts/chat.png) no-repeat center;
+  background: url(./../../source/img/main/contacts/chat.png) no-repeat center;
   width: 34px;
   height: 34px;
   padding: 3px;
@@ -827,7 +828,7 @@
 }
 
 .contacts .button__like {
-  background: url(/source/img/main/contacts/like.png) no-repeat center;
+  background: url(./../../source/img/main/contacts/like.png) no-repeat center;
   width: 34px;
   height: 34px;
   padding: 3px;
@@ -863,7 +864,7 @@
   position: absolute;
   left: 205px;
   bottom: 18px;
-  background: url(/source/img/main/contacts/chat-icon.png) no-repeat center;
+  background: url(./../../source/img/main/contacts/chat-icon.png) no-repeat center;
   width: 34px;
   height: 34px;
   padding: 7px;

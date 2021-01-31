@@ -49,13 +49,14 @@
     min-height: 70px;
     padding-bottom: 0.625em;
     font-size: 12px;
+    border-radius: 7px;
 
     text-decoration: none;
     color: #ffffff;
   }
 
   &__link-home {
-    background: url(/source/img/navigation/nav-btn-icons/home.png) no-repeat
+    background: url(./../../source/img/navigation/nav-btn-icons/home.png) no-repeat
       center;
   }
 
@@ -66,7 +67,7 @@
   }
 
   &__link-statics {
-    background: url(/source/img/navigation/nav-btn-icons/statics.png) no-repeat
+    background: url(./../../source/img/navigation/nav-btn-icons/statics.png) no-repeat
       center;
   }
 
@@ -77,7 +78,7 @@
   }
 
   &__link-users {
-    background: url(/source/img/navigation/nav-btn-icons/user.png) no-repeat
+    background: url(./../../source/img/navigation/nav-btn-icons/user.png) no-repeat
       center;
   }
 
@@ -88,7 +89,7 @@
   }
 
   &__link-settings {
-    background: url(/source/img/navigation/nav-btn-icons/settings.png) no-repeat
+    background: url(./../../source/img/navigation/nav-btn-icons/settings.png) no-repeat
       center;
   }
 
@@ -99,7 +100,7 @@
   }
 
   &__link-queries {
-    background: url(/source/img/navigation/nav-btn-icons/queries.png) no-repeat
+    background: url(./../../source/img/navigation/nav-btn-icons/queries.png) no-repeat
       center;
   }
 
@@ -110,7 +111,7 @@
   }
 
   &__link-power {
-    background: url(/source/img/navigation/nav-btn-icons/power-button.png)
+    background: url(./../../source/img/navigation/nav-btn-icons/power-button.png)
       no-repeat center;
     margin-top: 447px;
   }
